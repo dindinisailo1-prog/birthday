@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff0000, #ffffff);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  width: 340px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(255,0,0,0.4);
+  z-index: 2;
+}
+
+h1 {
+  color: #e60000;
+}
+
+h2 {
+  color: #ff4d4d;
+}
+
+p {
+  color: #444;
+  font-size: 15px;
+  min-height: 90px;
+}
+
+/* Candle */
+.candle-area {
+  margin-top: 20px;
+}
+
+.candle {
+  width: 20px;
+  height: 60px;
+  background: #ff4d4d;
+  margin: 0 auto;
+  border-radius: 5px;
+  position: relative;
+}
+
+.flame {
+  width: 15px;
+  height: 25px;
+  background: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: flicker 0.8s infinite;
+  cursor: pointer;
+}
+
+@keyframes flicker {
+  0% { transform: translateX(-50%) scale(1); }
+  50% { transform: translateX(-50%) scale(1.1); }
+  100% { transform: translateX(-50%) scale(1); }
+}
+
+/* Slow Heart Rain */
+.hearts::before {
+  content: "❤️ 💕 💖 💗";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 22px;
+  animation: fall 14s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes fall {
+  0% { top: -10%; }
+  100% { top: 110%; }
+}
+
+#finalText {
+  margin-top: 15px;
+  color: #e60000;
+  font-size: 18px;
+  font-weight: bold;
+}

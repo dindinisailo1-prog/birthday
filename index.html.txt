@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday ❤️</title>
+
+  <!-- Mungil Font -->
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Heart Rain -->
+<div class="hearts"></div>
+
+<div class="card">
+  <h1>Happy Birthday ❤️</h1>
+  <h2>Mr. Tamang 🎂</h2>
+
+  <!-- Typing Text -->
+  <p id="typing"></p>
+
+  <!-- Candle -->
+  <div class="candle-area">
+    <div class="candle">
+      <div class="flame" id="flame"></div>
+    </div>
+    <small>🕯️ Tap the candle & make a wish</small>
+  </div>
+
+  <div id="finalText"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
